@@ -1,4 +1,7 @@
 /* General */
+
+
+
 .text-over-media {
   position: relative;
   background-color: black;
@@ -52,6 +55,19 @@
   } */
 }
 
+
+.inline-video {
+    position: relative;
+    background-color: black;
+    color: #ffffff;
+    height: 60vh;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
 .credits.text-over-media {
   padding: 1em;
   ul {
@@ -73,22 +89,70 @@
   }
 }
 
+
+/*  video as background */
 .section-background-video{
     display: block;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
+    width:100%;
+    height:100%;
     right: 0;
-    width: auto;
-    height: auto
     z-index: 4;
 } 
+
+.section-background-video video{
+      object-fit: cover;
+      width:100%;
+      height:100%;
+  
+}
+
+.section-background-image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3
+}
+/*  end of video as background */
+
+
+/* scrollmation added class */
+.sticky-top {
+    position: absolute !important;
+    top: 0 !important;
+    left: auto !important;
+    right: 0 !important;
+    bottom: auto !important;
+} 
+.sticky-centered {
+    position: fixed !important;
+    top: 60px !important;
+    left: auto !important;
+    right: 0 !important;
+    bottom: auto !important;
+}
+.sticky-bottom {
+    position: absolute !important;
+    top: auto !important;
+    left: auto !important;
+    right: 0 !important;
+    bottom: 0px !important;
+}
+
 
 .two-columns {
     @include clearfix;
     width: 100%;
     margin: 0px auto;
+    padding:50px;
     .primary-wrapper {
         width: 50%;
         position: static;
