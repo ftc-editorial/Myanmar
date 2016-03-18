@@ -210,15 +210,15 @@ gulp.task('deploy:assets', function() {
 
 gulp.task('deploy:html', function() {
   return gulp.src('dist/index.html')
-    .pipe($.prefix(config.prefixUrl + projectName))
+    /*.pipe($.prefix(config.prefixUrl + projectName))*/
     .pipe($.rename({basename: projectName, extname: '.html'}))
-    .pipe($.htmlmin({
+/*    .pipe($.htmlmin({
       removeComments: true,
       collapseWhitespace: true,
       removeAttributeQuotes: true,
       minifyJS: true,
       minifyCSS: true
-    }))
+    }))*/
     .pipe(gulp.dest(config.deploy.index));
 });
 
