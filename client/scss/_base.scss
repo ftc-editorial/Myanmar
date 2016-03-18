@@ -79,7 +79,14 @@ figcaption{
    color:$cite-color;
    text-align:left;
 }
+video{
+   object-fit: cover;
+   height: 100vh;
+    
+}
 
 body {
   background-color: $bodyBackColor;
+  text-align: justify;
+  text-justify:inter-ideograph;
 }
