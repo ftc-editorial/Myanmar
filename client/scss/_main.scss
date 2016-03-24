@@ -120,10 +120,9 @@
 
 
 
-
 .inline-video {
     position: relative;
-    background-color: black;
+    background-color: #fff1e0;
     color: #ffffff;
     height: 60vh;
     box-sizing: border-box;
@@ -135,11 +134,26 @@
 
 .inline-video video{
       object-fit: cover;
+      background:transparent url('https://ig.ft.com/sites/land-rush-investment/myanmar/media/myanmar-still-mr_puptung.jpg') no-repeat 0 0; 
       width:100%;
       height:100%;
-  
+      -webkit-background-size:cover; 
+      -moz-background-size:cover; 
+     -o-background-size:cover; 
+     background-size:cover; 
 
 }
+
+.credits text-over-media {
+  padding: 1em;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+}
+
 
 .credits.text-over-media {
   padding: 1em;
@@ -148,7 +162,10 @@
     margin: 0;
     padding: 0;
   }
+
+
 }
+
 .content-column  {
   max-width: 700px;
   margin: 0 auto;
@@ -163,6 +180,11 @@
   aside p{
     color:#777;
     font-size:.8em;
+  }
+  img{
+  width:auto;
+  height:auto;
+  max-width:100%;
   }
 }
 
